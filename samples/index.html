@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Twitter share-->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary" />`
     <meta property="og:url" content="https://jukebox.kuboko.jp/" />
     <meta property="og:title" content="Jukebox Japanese" />
     <meta property="og:description" content="Songs sampled using Jukebox" />
@@ -37,9 +37,34 @@
 
 </head>
 <body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Jukebox with Japanese lyrics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                ass="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/samples/">Samples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/titles/">Titles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/ids/">IDs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container mt-4 mb-4">
         <h3 class="pb-3 font-italic border-bottom">
-            Jukebox Japanese songs
+            Samples
         </h3>
 
         <div class="my-5">
@@ -52,25 +77,240 @@
 
         <div class="table-responsive">
             <table class="table">
-                <thead>
+                <thead align="center">
                     <tr>
-                        <th scope="col">MODEL</th>
-                        <th scope="col">DESCRIPTION</th>
-                        <th scope="col">LYRICS</th>
-                        <th scope="col">GENRE</th>
-                        <th scope="col">ARTIST</th>
-                        <th scope="col">DEMO</th>
+                        <th scope="col">Model</th>
+                        <th scope="col">Train ID</th>
+                        <th scope="col">Epochs</th>
+                        <th scope="col">Lyrics</th>
+                        <th scope="col">ALigned Lyrics</th>
+                        <th scope="col">Genre</th>
+                        <th scope="col">Demo</th>
                     </tr>
                 </thead>
-                <tbody>
+
+                <tbody align="center">
+                    
+                    <!-- finetune_1 -->
                     <tr>
                         <td>1b_prior_lyrics</td>
-                        <td>ファインチューニング</td>
-                        <td>Alphabet(ローマ字)</td>
-                        <td>j-pop</td>
-                        <td>greeeen</td>
-                        <td><a href="/samples/sample_1b_lyrics_roma_11708_item_0/" class="">曲を聞く</a></td>
+                        <td>finetune_1</td>
+                        <td align="right">-1</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>-</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_1/-01/" class="">曲を聞く</a></td>
                     </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_1</td>
+                        <td align="right">0</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>-</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_1/000/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_1</td>
+                        <td align="right">1</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>-</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_1/001/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_1</td>
+                        <td align="right">2</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>-</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_1/002/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_1</td>
+                        <td align="right">3</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>-</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_1/003/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_1</td>
+                        <td align="right">4</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>-</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_1/004/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_1</td>
+                        <td align="right">5</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>-</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_1/005/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_1</td>
+                        <td align="right">10</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>-</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_1/010/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_1</td>
+                        <td align="right">20</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>-</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_1/020/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_1</td>
+                        <td align="right">30</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>-</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_1/030/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_1</td>
+                        <td align="right">40</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>-</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_1/040/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_1</td>
+                        <td align="right">50</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>-</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_1/050/" class="">曲を聞く</a></td>
+                    </tr>
+
+                    <!-- finetune_2 -->
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_2</td>
+                        <td align="right">-1</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>○</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_2/-01/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_2</td>
+                        <td align="right">0</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>○</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_2/000/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_2</td>
+                        <td align="right">1</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>○</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_2/001/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_2</td>
+                        <td align="right">2</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>○</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_2/002/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_2</td>
+                        <td align="right">3</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>○</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_2/003/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_2</td>
+                        <td align="right">4</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>○</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_2/004/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_2</td>
+                        <td align="right">5</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>○</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_2/005/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_2</td>
+                        <td align="right">10</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>○</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_2/010/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_2</td>
+                        <td align="right">20</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>○</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_2/020/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_2</td>
+                        <td align="right">30</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>○</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_2/030/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_2</td>
+                        <td align="right">40</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>○</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_2/040/" class="">曲を聞く</a></td>
+                    </tr>
+                    <tr>
+                        <td>1b_prior_lyrics</td>
+                        <td>finetune_2</td>
+                        <td align="right">50</td>
+                        <td>Alphabet(ローマ字,英語,記号)</td>
+                        <td>○</td>
+                        <td>J-pop</td>
+                        <td><a href="/samples/finetune_2/050/" class="">曲を聞く</a></td>
+                    </tr>
+
 
                 </tbody>
             </table>
@@ -99,7 +339,7 @@
     <footer class="footer mt-auto text-center py-3">
         <div class="">
             <div class="small text-muted">
-                © 2021 KUBOKO
+                © 2022 KUBOKO
             </div>
         </div>
     </footer>
