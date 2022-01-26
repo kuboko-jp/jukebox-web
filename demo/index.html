@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="jp" class="h-100">
+<head>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FB9EZ7CYMP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FB9EZ7CYMP');
+    </script>
+
+    <!--Google AdSense-->
+    <script data-ad-client="ca-pub-2290025985581673" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Twitter share-->
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="https://jukebox.kuboko.jp/" />
+    <meta property="og:title" content="Jukebox Japanese" />
+    <meta property="og:description" content="Songs sampled using Jukebox" />
+    <!--<meta property="og:image" content="" />-->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Demo | Jukebox Japanese songs</title>
+
+
+    <link rel="icon" type="image/png" href="/imgs/favicon.png">
+
+    <link rel="stylesheet" href="css/container_width.css">
+
+</head>
+<body class="d-flex flex-column h-100">
+
+    <div class="container">
+        <div class="container">
+            <div class="row text-center">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col" width="31%">Jukeboxオリジナル学習済みモデル</th>
+                            <th scope="col" width="31%">ローマ字を含む歌詞でオリジナルモデルをFine-tuning</th>
+                            <th scope="col" width="31%">ひらがなを含む歌詞でゼロからTraining</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Train_ID</th>
+                            <td>-</td>
+                            <td>finetune_1</td>
+                            <td>initialize_2</td>
+                        </tr>
+                        <tr>
+                                <th scope="row">モデル</th>
+                                <td>1b_lyrics</td>
+                                <td>1b_lyrics</td>
+                                <td>1b_lyrics</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">歌詞トークン</th>
+                            <td>79個（アルファベット + 記号）</td>
+                            <td>79個（アルファベット + 記号）</td>
+                            <td>145個（アルファベット + ひらがな + 記号）</td>
+                        </tr> 
+                        <tr>
+                            <th scope="row">データセット</th>
+                            <td>約60万曲</td>
+                            <td>11,708曲</td>
+                            <td>11,009曲</td>
+                        </tr> 
+                        <tr>
+                            <th scope="row">歌詞トークン</th>
+                            <td>79個（アルファベット + 記号）</td>
+                            <td>79個（アルファベット + 記号）</td>
+                            <td>145個（アルファベット + ひらがな + 記号）</td>
+                        </tr> 
+                        <tr>
+                            <th scope="row">ｱｰﾃｨｽﾄ / ｼﾞｬﾝﾙ</th>
+                            <td>倖田來未 / Pop</td>
+                            <td>back number / J-Pop</td>
+                            <td>back number / J-Rock, Hiphop, Punk</td>
+                        </tr> 
+                        <tr>
+                            <th scope="row">ﾃﾞﾓﾝｽﾄﾚｰｼｮﾝ</th>
+                            <td height="200"><iframe style='height: 800%; width: 100%;' frameborder='0' scrolling='yes' src='samples/original/index.html' class='mt-2'></iframe></td>
+                            <td height="200"><iframe style='height: 800%; width: 100%;' frameborder='0' scrolling='yes' src='samples/finetune_1/index.html' class='mt-2'></iframe></td>
+                            <td height="200"><iframe style='height: 800%; width: 100%;' frameborder='0' scrolling='yes' src='samples/initialize_2/index.html' class='mt-2'></iframe></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>
